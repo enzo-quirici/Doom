@@ -1,5 +1,3 @@
-<img src="android-chrome-192x192.png" width="128px" height="128px">
-
 # DOOM on JS-DOS
 Play the classic "THE ULTIMATE DOOM" in your web browser today via JS-DOS.
 
