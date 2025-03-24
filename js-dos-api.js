@@ -1,20 +1,3 @@
-/*!
- * jQLite JavaScript Library v1.1.1 (http://code.google.com/p/jqlite/)
- * Copyright (c) 2010 Brett Fattori (bfattori@gmail.com)
- * Licensed under the MIT license
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Many thanks to the jQuery team's efforts.  Some code is
- * Copyright (c) 2010, John Resig.  See
- * http://jquery.org/license
- *
- * @author Brett Fattori (bfattori@gmail.com)
- * @author $Author: bfattori $
- * @version $Revision: 145 $
- *
- * Created: 03/29/2010
- * Modified: $Date: 2010-06-21 11:08:14 -0400 (Mon, 21 Jun 2010) $
- */
 (function(){function B(){return+new Date}var D=function(a,b){if(a===""&&b)return b;var d=a.split(" "),c=d.shift(),e;if(c.charAt(0)=="#"){var g=i.getElementById(c.substring(1));e=g?[g]:[]}else{e=c.charAt(0)!=="."?c.split(".")[0]:"*";var h=c.split("."),j=null;if(e.indexOf("[")!=-1){j=e;e=e.substr(0,e.indexOf("["))}g=function(o){var n=arguments.callee,k;if(!(k=!n.needClass)){k=n.classes;if(o.className.length==0)k=false;else{for(var r=o.className.split(" "),l=k.length,p=0;p<k.length;p++)f.inArray(k[p],
 r)!=-1&&l--;k=l==0}}if(k=k){if(!(k=!n.needAttribute)){n=n.attributes;k=true;for(r=0;r<n.length;r++){l=n[r].split("=");p=l[0].indexOf("!")!=-1||l[0].indexOf("*")!=-1?l[0].charAt(l[0].length-1)+"=":"=";if(p!="=")l[0]=l[0].substring(0,l[0].length-1);switch(p){case "=":k&=o.getAttribute(l[0])===l[1];break;case "!=":k&=o.getAttribute(l[0])!==l[1];break;case "*=":k&=o.getAttribute(l[0]).indexOf(l[1])!=-1;break;default:k=false}}k=k}k=k}if(k)return o};for(var u=[],s=0;s<b.length;s++)for(var C=b[s].getElementsByTagName(e),
 v=0;v<C.length;v++)u.push(C[v]);h&&h.shift();e=[];g.classes=h;if(j!=null){var w=j.indexOf("[");s=j.lastIndexOf("]");w=j.substring(w+1,s).split("][")}g.attributes=j!=null?w:null;g.needClass=c.indexOf(".")!=-1&&h.length>0;g.needAttribute=j!=null;for(c=0;c<u.length;c++)g(u[c])&&e.push(u[c])}return D(d.join(" "),e)},Q=function(a,b){b=b||i;if(a.nodeType&&a.nodeType===E){a=i.body;if(a===null)return[i]}if(a.nodeType&&a.nodeType===m)return[a];if(a.jquery&&typeof a.jquery==="string")return a.toArray();if(b)b=
@@ -96,7 +79,7 @@ function(a,b){jQuery.fn[b]=function(d){return d?this.bind(b,d):this.trigger(b)}}
     Dosbox.prototype.downloadScript = function() {
       this.module.setStatus('Downloading js-dos');
       this.ui.updateMessage('Downloading js-dos');
-      return new Dosbox.Xhr('https://thedoggybrad.github.io/doom_on_js-dos/js-dos-v3.js', {
+      return new Dosbox.Xhr('js-dos-v3.js', {
         success: (function(_this) {
           return function(script) {
             var func;
