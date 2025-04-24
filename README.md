@@ -2,7 +2,7 @@
 Play the classic "THE ULTIMATE DOOM" in your web browser today via JS-DOS.
 
 ## Special Note
-Only works on Desktop/PC/Laptop/Mac environments. Does not work on mobile devices like Android, iOS, KaiOS and more.
+Only works on Desktop/PC/Laptop/Mac environments. Does not work on mobile devices.
 
 ## Play Now!
 Visit https://thedoggybrad.github.io/doom_on_js-dos/ to play!
